@@ -1,0 +1,15 @@
+<div ng-controller="MyCtrl3">
+	<div id="messageSendForm">
+		<div class="alert alert-danger">
+			<form name="messageSendForm" ng-submit="messageSubmit()">
+				<div ng-show="isOpen">
+					<select multiple size="3" ng-model="user" style="width: 200px;height: 100px;" >
+						<option ng-value="userList.value" ng-selected="userList==user" ng-repeat="userList in userLists" value="{{userList.value}}">{{userList.text}}</option>
+					</select>
+				</div>			
+				<input type="text" ng-model="messageSend" required />
+				<input type="submit" ng-click="Submit" value="send" class="btn btn-success"/>
+			</form>
+		</div>
+	</div>
+</div>

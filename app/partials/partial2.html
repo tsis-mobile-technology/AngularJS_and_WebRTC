@@ -1,0 +1,13 @@
+<div ng-controller="MyCtrl2">
+	<div class="panel-login">
+		<div>그룹웨어 계정으로 로그인이 필요합니다.!</div>
+		<form ng-submit="gwLoginSubmit()">
+			<div>
+				<input type="text" ng-model="loginid" required /><BR>
+				<input type="text" ng-model="passwd" required /><BR>
+				<input type="submit" ng-click="Submit" value="login"/>
+			</div>					
+		</form>
+	</div>
+</div>
+
